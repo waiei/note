@@ -52,7 +52,7 @@ return Def.ActorMultiVertex({
 						math.cos(2.0 * math.pi * i / number) * scale[1] / 2,
 					},
 					faceColor,
-					{(uv[3] + uv[1]) * i / number, uv[2]},
+					{(uv[3] - uv[1]) * i / number + uv[1], uv[2]},
 				}
 			--end
 			if scale[2] > 0 or texture then
@@ -63,7 +63,7 @@ return Def.ActorMultiVertex({
 						math.cos(2.0 * math.pi * i / number) * scale[2] / 2,
 					},
 					faceColor,
-					{(uv[3] + uv[1]) * i / number, uv[4]},
+					{(uv[3] - uv[1]) * i / number + uv[1], uv[4]},
 				}
 			end
 		end
