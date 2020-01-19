@@ -144,11 +144,10 @@ for i = 0, resolution-1 do
 	end
 end
 
-return Def.ActorFrame{
+return Def.ActorFrame({
 	InitCommand = function(self)
 		local child = self:GetChild('Sprite')
-		self:ztest(true)
-		self:zwrite(true)
+		self:zbuffer(true)
 		self:playcommand('SphereModelCreate', {
 			Id = id,
 			Texture = child:GetTexture(),
@@ -167,4 +166,4 @@ return Def.ActorFrame{
 		end;
 	}),
 	modelActor,
-}
+})
