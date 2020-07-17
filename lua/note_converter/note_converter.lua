@@ -1,7 +1,7 @@
 --[[
     SM5.3 SetNoteDataConverter (A.C@waiei) 2020/07/17
     
-    StepMania5.3で使用可能なSetNoteData()の引数に渡すテーブルを作成するモジュールです。
+    StepMania5.3で使用可能なSetNoteDataFromLua()の引数に渡すテーブルを作成するモジュールです。
 
     使い方：
 
